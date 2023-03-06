@@ -1,13 +1,133 @@
-body {
+body{
+  background-color: #f6fcff;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Monstserrat", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+a,
+nav button{
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  transition: .4s;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.btn{
+  background-color: #1a8918;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 120px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+}
+
+.btn.btn-dark{
+  background-color: #000;
+  border-radius: 0;
+}
+
+.btn.btn-outline{
+  background-color: transparent;
+  border-radius: 0;
+  color: #000;
+  border: 1px solid #000;
+  padding: 7px 30px;
+}
+
+.btn:hover{
+  background-color: #0f730c;
+  color: #fff;
+}
+
+.btn.btn-outline:hover{
+  background-color: #000;
+}
+
+.btn.btn-danger:hover{
+  background-color: #dc3545;
+}
+
+button[disabled]{
+  background-color: #aaa;
+}
+
+.container .error{
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+/* mobile */
+.moblie_menu_icon{
+  display: none;
+}
+.nav_list_mobile{
+  display: none;
+}
+
+.link_list_mobile{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.link_list_mobile li{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-right: 7.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.link_list_mobile li a{
+  font-size: 18px;
+  padding: .6em 2.5em;
+  color: #f1f1f1;
+}
+
+.active{
+  background-color: #0000001b;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.active:hover{
+  background-color: #00000046;
+}
+
+.open{
+  display: block;
+}
+
+
+/* querrie */
+@media (max-width: 615px){
+  .moblie_menu_icon{
+      display: block;
+  }
+
+  .nav_list_mobile .link_list_mobile{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1rem;
+  }
+
+  .link_list_mobile li{
+    align-items: center;
+    justify-content: center;
+  }
 }
