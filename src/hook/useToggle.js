@@ -24,17 +24,17 @@ export function ToggleButton(){
             <div className={contains ? 'nav_list_mobile open' : 'nav_list_mobile'}>
                 <ul className='link_list_mobile'>
                     <li>
-                        <NavLink to="/" className={({isActive}) => (isActive ? 'active' : "")}>
+                        <NavLink to="/">
                             Home
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/projects" className={({isActive}) => (isActive ? 'active' : "")}>
+                        <NavLink to="/projects">
                             Projetos
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about" className={({isActive}) => (isActive ? 'active' : "")}>
+                        <NavLink to="/about">
                             Sobre
                         </NavLink>
                     </li>
