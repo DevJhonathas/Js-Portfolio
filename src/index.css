@@ -1,17 +1,34 @@
+:root{
+  /* geral */
+  --color-white: #fff;
+  --body-color-white: #f6fcff;
+  /* container */
+  --color-container-error: #721c24;
+  --background-color-container-error: #f8d7da;
+  --background-color-border-container-error: #f5c6cb;
+  /* botões */
+  --btn-background-green-color: #1a8918;
+  --btn-background-green-color-hover: #0f730c;
+  --btn-background-dark-color-hover: #000;
+  --btn-background-danger-color-hover: #dc3545;
+  --btn-color-desabled: #aaa;
+  /* mobile */
+  --color-mobile-li-a: #f1f1f1;
+}
+
 body{
-  background-color: #f6fcff;
+  background-color: var(--body-color-white);
   padding: 0;
   margin: 0;
   font-family: "Monstserrat", sans-serif;
 }
-
 
 a,
 nav button{
   text-decoration: none;
   background-color: transparent;
   border: none;
-  color: #000;
+  color: var(--btn-background-dark-color);
   transition: .4s;
   font-size: 1em;
   cursor: pointer;
@@ -20,8 +37,8 @@ nav button{
 
 
 .btn{
-  background-color: #1a8918;
-  color: #fff;
+  background-color: var(--btn-background-green-color);
+  color: var(--color-white);
   text-align: center;
   cursor: pointer;
   border-radius: 10px;
@@ -33,39 +50,39 @@ nav button{
 }
 
 .btn.btn-dark{
-  background-color: #000;
+  background-color: var(--btn-background-dark-color);;
   border-radius: 0;
 }
 
 .btn.btn-outline{
   background-color: transparent;
   border-radius: 0;
-  color: #000;
-  border: 1px solid #000;
+  color: var(--btn-background-dark-color);;
+  border: 1px solid var(--btn-background-dark-color);;
   padding: 7px 30px;
 }
 
 .btn:hover{
-  background-color: #0f730c;
-  color: #fff;
+  background-color: var(--btn-background-green-color-hover);
+  color: var(--color-white);
 }
 
 .btn.btn-outline:hover{
-  background-color: #000;
+  background-color: var(--btn-background-dark-color);;
 }
 
 .btn.btn-danger:hover{
-  background-color: #dc3545;
+  background-color: var(--btn-background-danger-color-hover);
 }
 
 button[disabled]{
-  background-color: #aaa;
+  background-color: var(--btn-color-desabled);
 }
 
 .container .error{
-  color: #721c24;
-  background-color: #f8d7da;
-  border: 1px solid #f5c6cb;
+  color: var(--color-container-error);
+  background-color: var(--background-color-container-error);
+  border: 1px solid var(--background-color-border-container-error);
   padding: 5px;
   border-radius: 5px;
 }
@@ -75,6 +92,7 @@ button[disabled]{
 .moblie_menu_icon{
   display: none;
 }
+
 .nav_list_mobile{
   display: none;
 }
@@ -96,17 +114,7 @@ button[disabled]{
 .link_list_mobile li a{
   font-size: 18px;
   padding: .6em 2.5em;
-  color: #f1f1f1;
-}
-
-.active{
-  background-color: #0000001b;
-  color: #000000;
-  border-radius: 10px;
-}
-
-.active:hover{
-  background-color: #00000046;
+  color: var(--color-mobile-li-a);
 }
 
 .open{

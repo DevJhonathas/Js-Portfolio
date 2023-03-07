@@ -1,16 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+:root{
+    /* geral */
+    --color-white: #f1f1f1;
+    /* navbar */
+    --box-shadow-navbar: hsl(253, 57%, 52%);
+    --background-color-navbar: hsl(253, 57%, 52%);
+    /* active */
+    --background-color-active: hsla(0, 0%, 0%, 0.106);
+    --background-color-active-hover: hsla(0, 0%, 0%, 0.275);
+    --color-active: hsl(0, 0%, 0%);
+}
+
 .navbar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    box-shadow: rgb(93, 62, 202) 0px -2px 15px 2px;
+    box-shadow: var(--box-shadow-navbar) 0px -2px 15px 2px;
     align-items: center;
     padding: .6em 2em;
-    background-color: rgb(93, 62, 202);
-    flex-wrap: wrap;
+    background-color: var(--background-color-navbar);
 }
 
 .brand{
     font-size: 2.5em;
-    color: #f1f1f1;
+    color: var(--color-white);
 }
 
 .brand span{
@@ -27,17 +41,17 @@
 .link_list li a{
     font-size: 18px;
     padding: .6em 2.5em;
-     color: #f1f1f1;
+     color:  var(--color-white);
 }
 
 .active{
-    background-color: #0000001b;
-    color: #000000;
+    background-color: var(--background-color-active);
+    color: var(--color-active);
     border-radius: 10px;
 }
 
 .active:hover{
-    background-color: #00000046;
+    background-color: var(--background-color-active-hover);
 }
 
 

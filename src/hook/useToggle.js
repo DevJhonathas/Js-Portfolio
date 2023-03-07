@@ -1,19 +1,24 @@
 import '../index.css';
-import { NavLink } from 'react-router-dom';
 import menu from "../img/menu_white_36dp.svg"
+import close from "../img/close_white_36dp.svg"
+
+import { NavLink } from 'react-router-dom';
+
+// hook
 import { useState } from 'react'; 
 
 export function ToggleButton(){
 
     const [contains, setContains] = useState(false);
+
     const ToggleMode = () => {
         setContains(!contains);
     }
-    
+ 
     return (
         <>
             <div className="moblie_menu_icon">
-                <button onClick={ToggleMode}><img src={menu} alt="burguer" /></button>
+                <button onClick={ToggleMode}><img src={contains ? close : menu} alt="burguer" /></button>
             </div>
 
             <div className={contains ? 'nav_list_mobile open' : 'nav_list_mobile'}>

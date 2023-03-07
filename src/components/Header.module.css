@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+:root{
+    /* geral */
+    --color-white: #f1f1f1;
+    /* main */
+    --box-shadow-navbar: hsl(253, 57%, 52%);
+    --background-color-navbar: hsl(253, 57%, 52%);
+    /* brand */
+    --background-color-brand-hover: hsl(0, 0%, 74%);
+}
+::-webkit-scrollbar { 
+    overflow-y:hidden;
+    overflow-x:hidden;
+    width: 0;
+ }
+
+.main{
+
+    padding: .6em 2em;
+    background-color: var(--background-color-navbar);
+    box-shadow: var(--box-shadow-navbar) 0px -2px 15px 2px;
+}
+
+.navbar_footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar_footer li{
+    padding-right: 2em;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    font-size: 1em;
+    color: var(--color-white);
+    font-family: 'Tilt Warp', sans-serif;
+}
+
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+}
+
+.brand p{
+    font-size: 1em;
+    font-weight: none;
+}
+
+.brand span{
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--color-white);
+    font-family: 'Tilt Warp', sans-serif;
+}
+
+.brand span:hover{
+    color: var(--background-color-brand-hover);
+}
+
