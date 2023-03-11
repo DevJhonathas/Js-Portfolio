@@ -27,6 +27,11 @@ const Navbar = () => {
                         Sobre
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink to="/contact" className={({isActive}) => (isActive ? styles.active : "")}>
+                            Contate-me
+                    </NavLink>
+                </li>
             </ul>
         </div>
         <ToggleButton/>

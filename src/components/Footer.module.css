@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 :root{
     /* geral */
-    --color-white: #f1f1f1;
+    --color-black: hsl(0, 0%, 0%);
     /* main */
-    --background-color-navbar: hsl(253, 57%, 52%);
+    --body-color-white-footer: hsla(0, 0%, 77%, 0.232);
     /* brand */
     --background-color-brand-hover: hsl(0, 0%, 74%);
     /* active */
@@ -19,9 +19,9 @@
     width: 0;
  }
 
-.main{
+.footer{
     padding: .6em 2em;
-    background-color: var(--background-color-navbar);
+    background-color: var(--body-color-white-footer);
 } 
 
 .navbar_footer{
@@ -37,7 +37,7 @@
     text-decoration: none;
     outline: none;
     list-style: none;
-    color: var(--color-white);
+    color: var(--color-black);
     font-family: 'Tilt Warp', sans-serif;
     margin-right: 10px;
 }
@@ -45,11 +45,7 @@
 .navbar_footer li a{
     font-size: 1em;
     padding: 1em;
-    color:  var(--color-white);
-}
-
-.navbar_footer li a:hover{
-     color:  var(--color-white-hover);
+    color:  var(--color-black);
 }
 
 .active{
@@ -63,30 +59,25 @@
 }
 
 
-.brand{
+.brand_footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
-.brand p{
+.brand_footer p{
     font-size: 1em;
     font-weight: none;
 }
 
-.brand span{
+.brand_footer span{
     font-size: 1em;
     font-weight: 900;
     text-transform: uppercase;
-    color: var(--color-white);
+    color: var(--color-black);
     font-family: 'Tilt Warp', sans-serif;
 }
-
-.brand span:hover{
-    color: var(--background-color-brand-hover);
-}
-
 
 /* media queires */
 @media (max-width: 477px){
@@ -95,23 +86,37 @@
         padding: .8em;
     }
 
-    .brand p{
+    .brand_footer p{
         font-size: .9em;
         font-weight: none;
     }
 
-    .brand span{
+    .brand_footer span{
         font-size: .9em;
     }
 }
 
 @media (max-width: 428px){
-    .brand p{
+    .brand_footer p{
         font-size: .7em;
         font-weight: none;
     }
 
-    .brand span{
+    .brand_footer span{
+        font-size: 1em;
+    }
+
+    .navbar_footer li a{
         font-size: .7em;
+        padding: 1em;
+        color:  var(--color-black);
+    }
+}
+
+@media (max-width: 395px){
+    .navbar_footer li a{
+        font-size: .7em;
+        padding: .6em;
+        color:  var(--color-black);
     }
 }

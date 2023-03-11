@@ -1,23 +1,23 @@
 :root{
   /* geral */
-  --color-white: #fff;
-  --body-color-white: #f6fcff;
+  --color-white: hsl(0, 0%, 100%);
+  --body-color-white-index:  hsla(0, 21%, 95%, 0.682);
   /* container */
-  --color-container-error: #721c24;
-  --background-color-container-error: #f8d7da;
+  --color-container-error: hsl(354, 61%, 28%);
+  --background-color-container-error: hsl(355, 70%, 91%);
   --background-color-border-container-error: #f5c6cb;
   /* botões */
-  --btn-background-green-color: #1a8918;
-  --btn-background-green-color-hover: #0f730c;
-  --btn-background-dark-color-hover: #000;
-  --btn-background-danger-color-hover: #dc3545;
-  --btn-color-desabled: #aaa;
+  --btn-background-green-color: hsl(119, 70%, 32%);
+  --btn-background-green-color-hover: hsl(118, 81%, 25%);
+  --btn-background-dark-color-hover: hsl(0, 0%, 0%);
+  --btn-background-danger-color-hover: hsl(354, 70%, 54%);
+  --btn-color-desabled: hsl(0, 0%, 67%);
   /* mobile */
-  --color-mobile-li-a: #f1f1f1;
+  --color-mobile-li-a: hsl(0, 0%, 0%); ;
 }
 
 body{
-  background-color: var(--body-color-white);
+  background-color: var(--body-color-white-index);
   padding: 0;
   margin: 0;
   font-family: "Monstserrat", sans-serif;
@@ -121,7 +121,6 @@ button[disabled]{
   display: block;
 }
 
-
 /* querrie */
 @media (max-width: 615px){
   .moblie_menu_icon{
@@ -137,5 +136,11 @@ button[disabled]{
   .link_list_mobile li{
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media (max-width: 409px){
+  .link_list_mobile li a{
+    font-size: 12.6px;
   }
 }
