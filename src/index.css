@@ -1,26 +1,56 @@
 :root{
   /* geral */
   --color-white: hsl(0, 0%, 100%);
-  --body-color-white-index:  hsla(0, 21%, 95%, 0.682);
-  /* container */
+  --body-color-white-index:  hsla(0, 0%, 98%, 0.551);
+
+  /* container app*/
   --color-container-error: hsl(354, 61%, 28%);
   --background-color-container-error: hsl(355, 70%, 91%);
   --background-color-border-container-error: #f5c6cb;
+
   /* botões */
   --btn-background-green-color: hsl(119, 70%, 32%);
   --btn-background-green-color-hover: hsl(118, 81%, 25%);
   --btn-background-dark-color-hover: hsl(0, 0%, 0%);
   --btn-background-danger-color-hover: hsl(354, 70%, 54%);
   --btn-color-desabled: hsl(0, 0%, 67%);
+
   /* mobile */
   --color-mobile-li-a: hsl(0, 0%, 0%); ;
+
+  /*Container-main Home*/
+
+
+  /* geral Navbar*/
+  --color-black: hsl(0, 0%, 0%);
+  --navbar-color-white: hsla(0, 20%, 95%, 0.325);
+  --box-shadow-navbar: hsla(0, 0%, 77%, 0.523);
+
+  /* active */
+  --background-color-active: hsla(0, 0%, 0%, 0.106);
+  --background-color-active-hover: hsla(0, 0%, 0%, 0.275);
+  --color-active: hsl(0, 0%, 0%);
+
+  /* geral footer*/
+  --color-black: hsl(0, 0%, 0%);
+
+  /* main footer*/
+  --body-color-white-footer: hsla(0, 0%, 77%, 0.232);
+
+  /* brand footer*/
+  --background-color-brand-hover: hsl(0, 0%, 74%);
+ 
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 body{
   background-color: var(--body-color-white-index);
   padding: 0;
   margin: 0;
-  font-family: "Monstserrat", sans-serif;
 }
 
 a,

@@ -1,16 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
-:root{
-    /* geral */
-    --color-black: hsl(0, 0%, 0%);
-    /* main */
-    --body-color-white-footer: hsla(0, 0%, 77%, 0.232);
-    /* brand */
-    --background-color-brand-hover: hsl(0, 0%, 74%);
-    /* active */
-    --background-color-active: hsla(0, 0%, 0%, 0.106);
-    --background-color-active-hover: hsla(0, 0%, 0%, 0.275);
-    --color-active: hsl(0, 0%, 0%);
-}
 
 /* Deixando ::-webkit-scrollbar para ser uma ladding page na home */
 ::-webkit-scrollbar { 
